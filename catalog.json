@@ -1,0 +1,143 @@
+{
+  "product_name": "NexusHQ",
+  "tagline": "The all-in-one B2B operations platform",
+  "plans": [
+    {
+      "name": "Starter",
+      "price": "$49/mo",
+      "annual_price": "$470/yr (save 20%)",
+      "users": 5,
+      "features": [
+        "5 team members",
+        "API access",
+        "Email support (48h SLA)",
+        "1 workspace",
+        "10GB storage",
+        "Basic analytics dashboard",
+        "CSV exports",
+        "REST API with 10k req/day",
+        "Community Slack access"
+      ],
+      "best_for": "Indie hackers and early-stage startups",
+      "not_included": ["SSO", "Webhooks", "Audit logs", "Custom roles", "SLA", "Dedicated CSM"]
+    },
+    {
+      "name": "Growth",
+      "price": "$199/mo",
+      "annual_price": "$1,910/yr (save 20%)",
+      "users": 25,
+      "features": [
+        "25 team members",
+        "Everything in Starter",
+        "Webhooks (50 endpoints)",
+        "Priority support (12h SLA)",
+        "5 workspaces",
+        "100GB storage",
+        "Advanced analytics + custom reports",
+        "REST + GraphQL API with 100k req/day",
+        "Zapier and Slack integrations",
+        "Custom roles (up to 10)",
+        "Two-factor authentication (2FA)"
+      ],
+      "best_for": "Growing teams scaling their operations",
+      "not_included": ["SSO / SAML", "Audit logs", "SLA guarantee", "Dedicated CSM", "On-prem deployment"]
+    },
+    {
+      "name": "Enterprise",
+      "price": "$499/mo",
+      "annual_price": "Custom (volume discounts available)",
+      "users": "Unlimited",
+      "features": [
+        "Unlimited team members",
+        "Everything in Growth",
+        "SSO / SAML 2.0",
+        "Audit logs (90-day retention)",
+        "99.9% uptime SLA",
+        "Dedicated Customer Success Manager",
+        "Unlimited workspaces",
+        "1TB storage",
+        "Unlimited API calls",
+        "Custom integrations",
+        "Custom roles (unlimited)",
+        "IP allowlisting",
+        "Data residency options (US, EU)",
+        "GDPR & SOC 2 Type II compliant",
+        "On-prem / private cloud deployment (add-on)",
+        "24/7 phone + email support"
+      ],
+      "best_for": "Large organizations needing compliance, security, and scale",
+      "not_included": []
+    }
+  ],
+  "add_ons": [
+    {
+      "name": "Extra Storage",
+      "price": "$10/mo per 50GB",
+      "available_on": ["Starter", "Growth", "Enterprise"]
+    },
+    {
+      "name": "Additional Users (Starter)",
+      "price": "$8/user/mo",
+      "available_on": ["Starter"]
+    },
+    {
+      "name": "Additional Users (Growth)",
+      "price": "$6/user/mo",
+      "available_on": ["Growth"]
+    },
+    {
+      "name": "Dedicated Infrastructure",
+      "price": "Contact sales",
+      "available_on": ["Enterprise"]
+    },
+    {
+      "name": "Extended Audit Log Retention",
+      "price": "$50/mo for 1-year retention",
+      "available_on": ["Enterprise"]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I switch plans mid-cycle?",
+      "a": "Yes. Upgrades take effect immediately with pro-rated billing. Downgrades take effect at the next billing cycle."
+    },
+    {
+      "q": "Is there a free trial?",
+      "a": "Yes — 14-day free trial on Starter and Growth, no credit card required. Enterprise trials are available by contacting sales."
+    },
+    {
+      "q": "What payment methods are accepted?",
+      "a": "Credit card (Visa, Mastercard, Amex) for Starter/Growth. Enterprise supports ACH, wire transfer, and invoicing."
+    },
+    {
+      "q": "Does Enterprise include SSO?",
+      "a": "Yes. Enterprise includes SSO / SAML 2.0 at no extra cost. It is not available on Starter or Growth."
+    },
+    {
+      "q": "What is the uptime SLA?",
+      "a": "Enterprise guarantees 99.9% uptime with credits if we breach it. Starter and Growth do not have a formal SLA."
+    },
+    {
+      "q": "Is NexusHQ SOC 2 compliant?",
+      "a": "Yes. NexusHQ is SOC 2 Type II certified. Compliance documentation is available for Enterprise customers on request."
+    },
+    {
+      "q": "Can I get a discount for annual billing?",
+      "a": "Yes — 20% discount when paying annually for Starter and Growth. Enterprise annual pricing includes custom volume discounts."
+    },
+    {
+      "q": "Is there a setup fee?",
+      "a": "No setup fees on any plan. Enterprise onboarding is guided by your dedicated CSM at no extra cost."
+    }
+  ],
+  "integrations": [
+    "Slack", "Zapier", "HubSpot", "Salesforce (Enterprise)", "GitHub", "Jira",
+    "Google Workspace", "Microsoft 365", "Stripe", "Intercom"
+  ],
+  "security": {
+    "encryption": "AES-256 at rest, TLS 1.3 in transit",
+    "compliance": ["SOC 2 Type II", "GDPR", "CCPA"],
+    "auth": ["Email/password", "2FA (TOTP)", "SSO/SAML (Enterprise)"],
+    "data_residency": ["US (default)", "EU (Enterprise add-on)"]
+  }
+}
