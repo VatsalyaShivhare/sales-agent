@@ -8,6 +8,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./sales_agent.db")
+# Ensure directory exists for absolute paths (e.g. Railway volume at /data)
+_db_path = DATABASE_URL.replace("sqlite:///", "")
+if _db_path.startswith("/"):
+    import pathlib
+    pathlib.Path(_db_path).parent.mkdir(parents=True, exist_ok=True)
 
 # SQLite needs check_same_thread=False; harmless for other backends
 connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
@@ -27,3 +32,4 @@ def get_db():
         yield db
     finally:
         db.close()
+
